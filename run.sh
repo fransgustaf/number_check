@@ -10,7 +10,7 @@ if [ -z $1 ]; then
 elif [ $1 == "test" ]; then
     echo "Running test"
     echo "Might not work on Windows"
-    javac -cp ../lib/junit-platform-console-standalone-1.8.0-M1.jar TestRunner.java Tests.java InputNumber.java LenientlDate.java
+    javac -cp ../lib/junit-platform-console-standalone-1.8.0-M1.jar TestRunner.java Tests.java InputNumber.java LenientDate.java
     java -cp ../lib/junit-platform-console-standalone-1.8.0-M1.jar:. TestRunner
     exit 0
 elif [ $1 == "build" ]; then
