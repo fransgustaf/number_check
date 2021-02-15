@@ -1,11 +1,11 @@
-##Overview##
+## Overview
 Verify Swedish type **personummer**, **samordningsnummer** and **organisationsnummer**
 
-##Tests##
+## Tests
 `./run.sh test`
 
-##Build##
+## Build
 `./run.sh build`
 
-##Verify number##
+## Verify number
 `./run.sh <input number>`
