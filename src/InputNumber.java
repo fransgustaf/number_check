@@ -13,14 +13,18 @@ class InputNumber {
         this.input = orginalInput;
         System.out.println("Input: " + this.input);
 
-        String divider = "-";
+
+    }
+
+    public boolean setup() {
+        String divider = "";
         if(this.input.indexOf("+") > -1) {
             divider = "+";
         }
         this.input = this.input.replaceAll("[+-]", "");
 
         if(!sanityCheck()) {
-            return;
+            return false;
         }
 
         if(this.input.length() < 12) {
@@ -34,6 +38,7 @@ class InputNumber {
 
         this.setInputType();
         System.out.println("Type is: " + type);
+        return true;
     }
 
     private void addPrefix(String divider) {

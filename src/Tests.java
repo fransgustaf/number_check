@@ -11,6 +11,7 @@ public class Tests {
 
         for(var number: list) {
             InputNumber inputNumber = new InputNumber(number);
+            inputNumber.setup();
             assertTrue(inputNumber.verifyInput());
         }
     }
@@ -21,6 +22,7 @@ public class Tests {
 
         for(var number: list) {
             InputNumber inputNumber = new InputNumber(number);
+            inputNumber.setup();
             assertFalse(inputNumber.verifyInput());
         }
     }
@@ -31,6 +33,7 @@ public class Tests {
 
         for(var number: list) {
             InputNumber inputNumber = new InputNumber(number);
+            inputNumber.setup();
             assertTrue(inputNumber.verifyInput());
         }
     }
@@ -41,6 +44,7 @@ public class Tests {
 
         for(var number: list) {
             InputNumber inputNumber = new InputNumber(number);
+            inputNumber.setup();
             assertTrue(inputNumber.verifyInput());
         }
     }
